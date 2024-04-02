@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(235, 162, 177);
+}
+header{
+    text-align: center;
+    background-color:rgb(122, 17, 38);
+    padding: 0;
+    background-color: rgb(219, 71, 101);
+
+}
+div{
+    margin: 5;
+    text-align: center;
+    padding: 5;
+}

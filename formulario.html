@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/visual.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <hr>
+        <h2>Utilização de um formulário:</h2>
+        <h4>Explicação sobre como funciona um formulário e como utilizar ele: </h4>
+        <hr>
+    </header>
+    <div>
+    <p>Form é a tag de criação do formulário.<p>
+    <p>O atributo action define o local (uma URL) em que os dados recolhidos do formulário devem ser enviados.</p>
+    <p>O atributo method define qual o método HTTP para enviar os dados (ele pode ser "GET" ou "POST").</p>
+        <br>
+    <div >
+        <p>A tag label é importante para os campos de formulários. Ela especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.</p>
+        <p>O input É um campo para que o usuário ou usuária possa inserir algum texto, data, número, cor, etc. possui como principais atributos type, que recebe como valor o tipo do input.</p>
+        <p>O atributo aria-label é uma ótima forma de ampliar a descrição de um elemento, pois ele permite transmitir informações sem que essas estejam visíveis para todos os usuários, mas são acessíveis para usuários de leitores de tela.</p>
+        
+        
+<form action="/pagRedirecionamentoInfos.html" method="post">
+
+    <div> 
+        <label for="nome">Seu nome completo:</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="text"  id="nome">
+    </div>
+
+    <div>
+        <label for="apelido">Seu apelido ou como prefere ser chamado:</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="text" id="apelido">
+    </div>
+
+    <div>
+        <label for="genero">Seu gênero</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="text" id="genero">
+    </div>
+
+    <div>
+        <label for="dataNascimento">Sua data de Nascimento:</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="date" id="dataNascimento">
+
+    </div>
+
+    <div>
+        <label for="email">E-mail:</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="e-mail" id="e-mail">
+    </div>
+
+    <div>
+        <label for="senhaE-mail">Sua senha:</label>
+        <span aria-label="required">*</span>
+        <br>
+        <input type="password"  id="senhaE-mail">
+    </div>
+
+    <div>
+        <label for="arquivo">Anexe o arquivo de sua escolha:</label>
+        <br>
+        <input type="file" name="file_user" id="arquivo">
+
+    </div>
+
+
+ </form>
+</body>
+</html>
